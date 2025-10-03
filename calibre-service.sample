@@ -1,0 +1,14 @@
+[Unit]
+Description=calibre Content server
+After=network.target
+
+[Service]
+Type=simple
+User=ab
+Group=ab
+WorkingDirectory=
+EnvironmentFile=calibre.config
+ExecStart=calibre-server.sh
+
+[Install]
+WantedBy=multi-user.target

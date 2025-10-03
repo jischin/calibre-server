@@ -1,0 +1,4 @@
+LIBS_LOCAL_DIR=Library/Calibre
+LIBS_SERVER_DIR=/srv/calibre
+REMOTE_HOST=rpi.diozan.ru
+CONFIG_DIR=
