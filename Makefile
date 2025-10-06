@@ -32,7 +32,7 @@ server-config: calibre-server.service calibre-service.sample calibre-config.py c
 server-install:
 	@
 	$(info Установка и запуск сервера...)
-	if [[ $$USER != "root" ]]; then
+	if [ $$USER != "root" ]; then
 		echo "Необходимы права суперпользователя!.."
 		exit 10
 	fi
@@ -44,7 +44,7 @@ server-install:
 server-deinstall:
 	@
 	$(info Удаление сервера...)
-	if [[ $$USER != "root" ]]; then
+	if [ $$USER != "root" ]; then
 		echo "Необходимы права суперпользователя!.."
 		exit 10
 	fi
