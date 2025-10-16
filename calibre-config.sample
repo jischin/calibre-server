@@ -1,5 +1,0 @@
-REMOTE_HOST=rpi.diozan.ru
-LIBS_SERVER_DIR=/srv/calibre
-LIBS_LOCAL_DIR=Library/Calibre
-CONFIG_DIR=.config/calibre
-CACHE_DIR=.cache/calibre

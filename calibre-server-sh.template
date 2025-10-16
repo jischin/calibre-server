@@ -1,8 +1,7 @@
 #! /bin/bash
 
-[[ ! -d ${CACHE_DIR} ]] && mkdir -p ${CACHE_DIR}
-
 calibre-server \
+    --enable-auth \
     --auth-mode=basic \
     --ban-after=10 \
     --ban-for=120 \
@@ -10,9 +9,8 @@ calibre-server \
     --port=5777 \
     --num-per-page=100 \
     --disable-use-bonjour \
-    --log=${CACHE_DIR}/calibre-server.log \
-    --access-log=${CACHE_DIR}/calibre-server-access.log \
-    --enable-auth \
+    --log=${CALIBRE_SERVER_LOG_FILE} \
+    --access-log=${CALIBRE_SERVER_ACCESS_LOG_FILE} \
     ${LIBS_SERVER_DIR}/*/
 
 

@@ -1,0 +1,21 @@
+# Шаблон конфигурационного файла
+# Внимание!!! Не нужно изменять этот файл. Все необходимые изменения
+# вносите в файл "calibre.config", который появится после выполнения
+# конфигурирования командой "make config".
+
+
+# Служебные каталоги библиотеки Calibre. В общем случае данные параметры
+# изменять не требуется.
+CALIBRE_SERVER_CONFIG_DIR=.config/calibre
+CALIBRE_SERVER_CACHE_DIR=.cache/calibre
+CALIBRE_SERVER_CONFIG_FILE=.config/calibre/calibre-server.config
+CALIBRE_SERVER_SHELL_FILE=.config/calibre/calibre-server.sh
+CALIBRE_SERVER_SERVICE_FILE=.config/calibre/calibre-server.service
+CALIBRE_SERVER_LOG_FILE=.cache/calibre/calibre-server.log
+CALIBRE_SERVER_ACCESS_LOG_FILE=.cache/calibre/calibre-server-access.log
+
+
+# Каталог библиотеки на сервере. Этот каталог должен быть доступен на запись
+# по протоколу SSH пользователю, сопровождающему библиотеку.
+# Измените, если каталог имеет иное имя.
+LIBS_SERVER_DIR=/srv/calibre

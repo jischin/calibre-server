@@ -6,9 +6,9 @@ After=network.target
 Type=simple
 User=ab
 Group=ab
-WorkingDirectory=
-EnvironmentFile=calibre.config
-ExecStart=calibre-server.sh
+WorkingDirectory=LIBS_SERVER_DIR
+EnvironmentFile=CALIBRE_SERVER_CONFIG_FILE
+ExecStart=CALIBRE_SERVER_SHELL_FILE
 
 [Install]
 WantedBy=multi-user.target
